@@ -1,7 +1,12 @@
 import os
+import sys
 import tempfile
+from pathlib import Path
 
 import streamlit as st
+
+APP_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(APP_DIR))
 
 from shopping_agent import agent
 
